@@ -1,0 +1,15 @@
+.home-choice-buttons {
+    .wrapper {
+        display: flex;
+
+        > * {
+            width: 50%;
+            flex: 1 0 50%;
+            max-width: 50%;
+
+            a {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+}

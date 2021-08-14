@@ -14,3 +14,8 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sourceMaps();
+
+/**
+ * Landingspages compiling
+ */
+mix.sass('resources/sass/landingspages/Fiber/app.scss', 'public/css/fiber');

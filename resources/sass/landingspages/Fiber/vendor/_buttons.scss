@@ -1,0 +1,31 @@
+.button {
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    color: $white !important;
+    background-color: $purple;
+    transition: .3s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background-color: darken($purple, 10%);
+    }
+
+    &.white {
+        color: $purple !important;
+        background-color: $white;
+
+        &:hover {
+            color: $white !important;
+            background-color: lighten($purple, 10%);
+        }
+    }
+}

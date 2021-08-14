@@ -1,0 +1,45 @@
+.section-usps {
+    .title {
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .usps {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        @include media-breakpoint-up(md) {
+            margin: -10px;
+        }
+
+        > * {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @include media-breakpoint-up(md) {
+                margin: 10px;
+                width: calc(33.33% - 20px);
+                flex: 1 0 calc(33.33% - 20px);
+                max-width: calc(33.33% - 20px);
+            }
+
+            .icon {
+                margin-bottom: 10px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -18,3 +18,8 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/frontend', [App\Http\Controllers\Frontend\FrontendController::class, 'index'])->name('frontend.index');
 
 Route::get('/backend', [App\Http\Controllers\Backend\BackendController::class, 'index'])->name('backend.index');
+
+/**
+ * Landingspage routes
+ */
+Route::get('/landingspage/{name}', [App\Http\Controllers\Frontend\Landingspage\LandingspageController::class, 'loadLandingspage']);
